@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashionista Store</title>
+
+<!-- INI WAJIB -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="container header-flex">
+
+<div class="nav-left">
+<h1 onclick="scrollToHome()">Fashionista</h1>
+</div>
+
+<div class="nav-menu">
+<span onclick="scrollToHome()">Home</span>
+<span onclick="scrollToKategori('kaos')">Kaos</span>
+<span onclick="scrollToKategori('dress')">Dress</span>
+<span onclick="scrollToKategori('celana')">Celana</span>
+</div>
+
+<div class="nav-right">
+<div class="cart-icon" onclick="bukaKeranjang()">
+🛒 <span id="notif-keranjang">0</span>
+</div>
+</div>
+
+</div>
+</header>
+
+<!-- HERO FULL GAMBAR -->
+<section class="hero">
+    <img src="heroooo4.png" class="hero-img">
+
+</section>
+
+<div class="container">
+
+<!-- KAOS -->
+<h2 id="kaos">Kaos Wanita Lucu</h2>
+<div class="product-grid">
+
+<div class="card">
+<span class="badge">-33%</span>
+<img src="kaos1.jpg">
+<h3>coklat pastel</h3>
+<p class="price">
+  <span class="old-price">Rp 120.000</span>
+  Rp 80.000
+</p>
+
+<button class="btn-cart" onclick="tambahKeKeranjang('coklat pastel',80000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('coklat pastel',80000)">Beli</button>
+</div>
+
+<div class="card">
+<span class="badge">-25%</span>
+<img src="kaos2.jpg">
+<h3>pink gemoy pastel</h3>
+<p class="price">
+  <span class="old-price">Rp.160.000</span>
+   Rp.120.000
+  </p>
+<button class="btn-cart" onclick="tambahKeKeranjang('pink gemoy pastel',120000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('pink gemoy pastel',120000)">Beli</button>
+</div>
+
+<div class="card">
+<span class="badge">-20%</span>
+<img src="kaos3.jpg">
+<h3>Kaos Bunny Pink</h3>
+<p class="price">
+  <span class="old-price">Rp.140.000</span>
+  Rp.112.000
+  </p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Kaos Bunny Pink',112000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Kaos Bunny Pink',112000)">Beli</button>
+</div>
+
+<div class="card">
+  <span class="badge">-15%</span>
+<img src="kaos4.jpg">
+<h3>Coklat Mahogany</h3>
+<p class="price">
+ <span class="old-price">Rp.90.000</span>
+  Rp.76.500
+  </p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Coklat Mahogany',76500)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Coklat Mahogany',76500)">Beli</button>
+</div>
+
+</div>
+
+<!-- DRESS -->
+<h2 id="dress">Dress Aesthetic</h2>
+<div class="product-grid">
+
+<div class="card">
+  <span class="badge">-30%</span>
+<img src="foto1.jpg">
+<h3>Korean Floral Dress</h3>
+<p class="price">
+  <span class="old-price">Rp.350.000</span>
+  Rp.245.000
+  </p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Korean Floral Dress',245000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Korean Floral Dress',245000)">Beli</button>
+</div>
+
+<div class="card">
+<img src="foto2.jpg">
+<h3>Vintage Midi Dress</h3>
+<p class="price">Rp 300.000</p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Vintage Midi Dress',300000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Vintage Midi Dress',300000)">Beli</button>
+</div>
+
+<div class="card">
+  <span class="badge">-30%</span>
+<img src="foto3.jpg">
+<h3>White Summer Dress</h3>
+<p class="price">
+  <span class="old-price">Rp.275.000</span>
+  Rp.192.000
+  </p>
+<button class="btn-cart" onclick="tambahKeKeranjang('White Summer Dress',192000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('White Summer Dress',192000)">Beli</button>
+</div>
+
+<div class="card">
+<img src="foto4.jpg">
+<h3>Silk Party Dress</h3>
+<p class="price">Rp 180.000</p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Silk Party Dress',180000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Silk Party Dress',180000)">Beli</button>
+</div>
+
+</div>
+
+<!-- CELANA -->
+<h2 id="celana">Celana Wanita</h2>
+<div class="product-grid">
+
+<div class="card">
+<img src="foto5.jpg">
+<h3>Highwaist Jeans</h3>
+<p class="price">Rp 150.000</p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Highwaist Jeans',150000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Highwaist Jeans',150000)">Beli</button>
+</div>
+
+<div class="card">
+  <span class="badge">-50%</span>
+<img src="foto6.jpg">
+<h3>Loose Pants Cream</h3>
+<p class="price">
+  <span class="old-price">Rp.145.000</span>
+    Rp.72.500
+    </p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Loose Pants Cream',72500)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Loose Pants Cream',72500)">Beli</button>
+</div>
+
+<div class="card">
+<img src="foto7.jpg">
+<h3>Kulot Linen Black</h3>
+<p class="price">Rp 75.000</p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Kulot Linen Black',75000)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Kulot Linen Black',75000)">Beli</button>
+</div>
+
+<div class="card">
+  
+
+<img src="foto8.jpg">
+<span class="badge">-45%</span>
+<h3>Boyfriend Jeans</h3>
+<p class="price">
+  <span class="old-price">Rp.110.000</span>
+  Rp.60.500
+  </p>
+<button class="btn-cart" onclick="tambahKeKeranjang('Boyfriend Jeans',60500)">+ Keranjang</button>
+<button class="btn-buy" onclick="beliSekarang('Boyfriend Jeans',60500)">Beli</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal-keranjang" class="modal">
+<div class="modal-content">
+<span onclick="tutupKeranjang()" class="tutup">&times;</span>
+<h2>Keranjang</h2>
+<div id="list-item-keranjang"></div>
+<h3>Total: Rp <span id="total-harga">0</span></h3>
+<button onclick="checkoutWA()" class="btn-checkout">Checkout</button>
+</div>
+</div>
+ 
+<div class="footer-contact">
+  <h4>
+    <a href="https://wa.me/6285691198653" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </h4>
+</div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Fashionista Store. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
